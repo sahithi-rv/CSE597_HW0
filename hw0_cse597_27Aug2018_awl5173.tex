@@ -25,12 +25,12 @@
 \providecommand{\e}[1]{\ensuremath{\times 10^{#1} \times}}
 
 % In case you need to adjust margins:
-%\topmargin=-0.45in      %
+%\topmargin=-0.45in      % Switch to the other top for overleaf
 \topmargin=0.25in      %
 \evensidemargin=0in     %
 \oddsidemargin=0in      %
 \textwidth=6.5in        %
-%\textheight=9.75in       %
+%\textheight=9.75in       % play with this for overleaf
 \textheight=9.25in       %
 \headsep=0.25in         %
 
@@ -39,8 +39,8 @@
 \newcommand{\hmwkDueDate}{Monday,\ August\  27,\ 2018}
 \newcommand{\hmwkClass}{Homework 0}
 \newcommand{\hmwkClassTime}{CSE 597}
-\newcommand{\hmwkClassInstructor}{ } \newcommand{\hmwkAuthorNameb}{Adam\ W.\ Lavely}
-\newcommand{\hmwkNames}{Lavely}
+\newcommand{\hmwkClassInstructor}{ } \newcommand{\hmwkAuthorNameb}{XYZ\ ZYX.\ YZX}
+\newcommand{\hmwkNames}{XYZ}
 
 % Setup the header and footer
 \pagestyle{fancy}
@@ -67,13 +67,13 @@
 \newpage
 \section{Syllabus Acknowledgement}
 
-By turning in this assignment, I, XYZ, acknowledge that I have recieved and understand the course syllabus information available on \url{sites.psu.edu/psucse597fall2018}. 
+By turning in this assignment, I, XYZ, acknowledge that I have received and understand the course syllabus information available on \url{sites.psu.edu/psucse597fall2018}. 
 
 \section{Introduction}
 
-My name is Adam Lavely.  I am a XYZ year master/phD student in the XYZ department. My programming experience includes XYZ-languages and XYZ-parallelization-methods.  When I compute, I typically use XYZ-clusters. 
+My name is XYZ.  I am a XYZ year master/phD student in the XYZ department. My programming experience includes XYZ-languages and XYZ-parallelization-methods.  When I compute, I typically use XYZ-clusters.  My research is all/mostly/some/not computational in nature. 
 
-My area of interest is XYZ. Good general references in my field are \citet{wilcox2000basic} and \citet{kreyszig2010advanced}.  Good computational references in my field are \citet{anderson1995computational} and \citet{wilcox1998turbulence}.
+My area of interest is XYZ. Good general references in my field are \citet{wilcox2000basic} and \citet{kreyszig2010advanced}.  Good computational references in my field are \citet{anderson1995computational} and \citet{wilcox1998turbulence}. 
 
 
 \subsection{Accounts}
@@ -99,33 +99,32 @@ I am currently thinking about choosing XYZ as my $Ax=b$ problem for the semester
 You can get my assignment onto ACI using the command:
 
 \begin{verbatim}
-git clone ABC
+git clone USERID@aci-b.aci.ics.psu.edu:/storage/work/a/awl5173/toShare/cse597_fall2018/hw0/psu_cse597-002F18_hw0
 \end{verbatim}
 
+* Note, test this with us in class or with another person who isn't in the same group(s) as you.
 
 \subsection{Program overview}
 
-What the program does
+This is a serial hello world program, written in C. There is only one code file. The repository also contains the makefile for creating the executable, a readme, licensing information and the tex file for the write-up.
 
-Basic code structure
-
-Where to find the program
 
 \subsection{Instructions for running and verifying the code}
 
+\textbf{Creating the executable:}
 \begin{verbatim}
-module load gcc/5.3.1
+module load gcc/7.3.1
 make
 \end{verbatim}
 
+\textbf{Running the program:}
 \begin{verbatim}
-./awl5173.out 
+./awl5173_helloWorld.out
 \end{verbatim}
 
 \textbf{Expected output:}
 \begin{verbatim}
-
-Hello world, from awl5173.
+awl5173 says "Hello, World!"
 \end{verbatim}
 
 \subsection{Instructions for compiling the write-up}
@@ -134,6 +133,10 @@ I used ACI to compile the document.  You can do this using the command:
 \begin{verbatim}
 ./pdfmake.sh
 \end{verbatim}
+
+\section{Acknowledgements}
+
+I would like to acknowledge Chris Blanton and Chuck Pavloski for helping formulate the homework material, and Justin Petucci and Rahim Charania for helping to make sure the permissions were set correctly for the git information.
 
 \bibliographystyle{acm}
 \bibliography{hw0_cse597_27Aug2018_awl5173}
