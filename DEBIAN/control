@@ -1,0 +1,17 @@
+Package: openjdk-9-jdk
+Source: openjdk-9
+Version: 9~b114-0ubuntu1
+Architecture: amd64
+Maintainer: OpenJDK Team <openjdk@lists.launchpad.net>
+Installed-Size: 57
+Depends: openjdk-9-jre (= 9~b114-0ubuntu1), openjdk-9-jdk-headless (= 9~b114-0ubuntu1), libc6 (>= 2.2.5)
+Recommends: libxt-dev
+Suggests: openjdk-9-demo, openjdk-9-source, visualvm
+Provides: java-compiler, java-sdk, java2-sdk, java5-sdk, java6-sdk, java7-sdk, java8-sdk
+Section: java
+Priority: optional
+Multi-Arch: same
+Homepage: http://openjdk.java.net/
+Description: OpenJDK Development Kit (JDK)
+ OpenJDK is a development environment for building applications,
+ applets, and components using the Java programming language.

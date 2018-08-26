@@ -9,9 +9,9 @@ CC=gcc
 CFLAGS=-c -g
 
 
-SOURCES=awl5173_helloWorld.c
+SOURCES=svr46_helloworld.c
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=awl5173_helloWorld.out
+EXECUTABLE=svr46_helloworld.out
 
 all: $(SOURCES) $(EXECUTABLE)
     
@@ -22,4 +22,4 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm *o awl5173_helloWorld.out
+	rm *o svr46_helloWorld.out
